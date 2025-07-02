@@ -36,9 +36,9 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-background animate-fade-in-up">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive solutions across multiple industries, delivered by our expert teams with precision and innovation.
@@ -47,10 +47,10 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-professional transition-smooth h-full">
+            <Card key={index} className="group hover:shadow-professional transition-smooth h-full hover-lift animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <CardContent className="p-6 h-full flex flex-col">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 group-hover:shadow-glow transition-smooth">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 group-hover:shadow-glow group-hover:scale-110 transition-smooth">
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-xl text-primary">{service.title}</h3>

@@ -31,24 +31,24 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background animate-fade-in-up">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Contact Us</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Got questions or want to discuss a project? We're here to help you succeed.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 animate-fade-in-up animate-delay-200">
           {/* Contact Information */}
           <div className="space-y-6">
             <div className="grid gap-6">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="hover:shadow-card-hover transition-smooth">
+                <Card key={index} className="hover:shadow-card-hover transition-smooth hover-lift">
                   <CardContent className="p-6">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-smooth">
                         <info.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
 
             {/* Working Hours */}
-            <Card className="hover:shadow-card-hover transition-smooth">
+            <Card className="hover:shadow-card-hover transition-smooth hover-lift">
               <CardContent className="p-6">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4">
@@ -95,7 +95,7 @@ const Contact = () => {
 
           {/* CTA Section */}
           <div className="flex flex-col justify-center">
-            <Card className="bg-gradient-primary text-white">
+            <Card className="bg-gradient-primary text-white hover-lift">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
                 <p className="text-lg mb-6 opacity-90">

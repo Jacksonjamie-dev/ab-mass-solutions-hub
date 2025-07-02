@@ -21,11 +21,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-background animate-fade-in-up">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Left Column - About Section */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 animate-fade-in-left">
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-4 text-primary">About AB MASS</h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
@@ -44,7 +44,7 @@ const About = () => {
           </div>
 
           {/* Right Column - Main Content */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 animate-fade-in-right animate-delay-200">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
               We Build the Future Through Innovation and Strategic Services
             </h2>

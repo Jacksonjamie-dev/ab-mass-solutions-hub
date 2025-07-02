@@ -31,9 +31,9 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="why-choose" className="py-20 bg-gradient-subtle">
+    <section id="why-choose" className="py-20 bg-gradient-subtle animate-fade-in-up">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Why Choose Us?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover what sets AB MASS COMPANY LIMITED apart as your trusted partner for business success.
@@ -42,9 +42,9 @@ const WhyChooseUs = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {reasons.slice(0, 3).map((reason, index) => (
-            <Card key={index} className="hover:shadow-card-hover transition-smooth text-center">
+            <Card key={index} className="hover:shadow-card-hover transition-smooth text-center hover-lift animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-smooth">
                   <reason.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-3 text-primary">{reason.title}</h3>
@@ -56,9 +56,9 @@ const WhyChooseUs = () => {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {reasons.slice(3).map((reason, index) => (
-            <Card key={index + 3} className="hover:shadow-card-hover transition-smooth text-center">
+            <Card key={index + 3} className="hover:shadow-card-hover transition-smooth text-center hover-lift animate-scale-in" style={{animationDelay: `${(index + 3) * 0.1}s`}}>
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-smooth">
                   <reason.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-3 text-primary">{reason.title}</h3>
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
 
         {/* Partnership Section */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-primary rounded-lg p-8 text-white">
+          <div className="bg-gradient-primary rounded-lg p-8 text-white animate-fade-in-up animate-delay-300 hover-lift">
             <h3 className="text-2xl font-bold mb-4">Become a Partner</h3>
             <p className="text-lg mb-6 opacity-90">
               We believe in long-term partnerships that create shared value. Whether you're an Agent, Merchant, or Business Partner, we welcome your collaboration.
