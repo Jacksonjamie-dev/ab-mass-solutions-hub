@@ -21,40 +21,46 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-subtle">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-            About Us
-          </h2>
-          <p className="text-xl md:text-2xl font-semibold mb-6 text-corporate-gray">
-            A Vision-Driven Company with a Passion for Excellence
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Founded with the goal of transforming how services are delivered in Ghana and beyond, 
-            AB MASS COMPANY LIMITED stands at the intersection of technology, infrastructure, and business support.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            We are a team of experts and professionals passionate about improving lives and systems through smart solutions. 
-            Whether it's deploying tech infrastructure, supporting fleet and operations, or supplying essential medical and 
-            environmental tools — we do it all with integrity and precision.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-12 text-primary">Our Core Values</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <Card key={index} className="hover:shadow-card-hover transition-smooth">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Left Column - About Section */}
+          <div className="lg:col-span-1">
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-primary">About AB MASS</h3>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
+            </div>
+            
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold mb-4 text-primary">CORE VALUES</h4>
+              <div className="space-y-2">
+                {values.map((value, index) => (
+                  <div key={index} className="text-muted-foreground">
+                    {value.title}
                   </div>
-                  <h4 className="font-semibold text-lg mb-3 text-primary">{value.title}</h4>
-                  <p className="text-muted-foreground text-sm">{value.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Main Content */}
+          <div className="lg:col-span-2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+              We Build the Future Through Innovation and Strategic Services
+            </h2>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                Established in 2020 as a partnership between local expertise and international standards, 
+                AB MASS COMPANY LIMITED has committed capital of US $500 million, managing over 
+                US $200 million in assets. Among the first service providers in Ghana, 
+                adhering to top governance standards.
+              </p>
+              <div className="pt-4">
+                <a href="#about" className="text-primary font-medium hover:underline">
+                  Discover more about us →
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

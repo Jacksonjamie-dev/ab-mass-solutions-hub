@@ -7,11 +7,12 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Why Choose Us", href: "#why-choose" },
+    { label: "News", href: "#news" },
+    { label: "Career", href: "#career" },
     { label: "Contact", href: "#contact" },
+    { label: "Become a partner", href: "#partner" },
   ];
 
   return (
@@ -36,9 +37,8 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="professional" size="sm">
-            Get Quote
-          </Button>
+          <span className="text-sm font-medium">EN</span>
+          <span className="text-sm font-medium text-muted-foreground">RU</span>
         </div>
 
         {/* Mobile Navigation */}

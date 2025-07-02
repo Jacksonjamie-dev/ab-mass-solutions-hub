@@ -13,28 +13,18 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto">
+      <div className="relative z-10 container mx-auto px-4 text-white">
+        <div className="max-w-4xl text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Welcome to{" "}
-            <span className="text-accent">AB MASS COMPANY LIMITED</span>
+            AB MASS COMPANY LIMITED
           </h1>
-          <p className="text-xl md:text-2xl mb-4 font-semibold">
-            Empowering Progress Through Innovation & Service
-          </p>
-          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            We are committed to delivering cutting-edge solutions and services across key sectors including Information Technology, Construction, Environmental Management, Medical Supply, and Business Consultancy.
-          </p>
-          <p className="text-base md:text-lg mb-10 opacity-80 max-w-2xl mx-auto">
-            Join the many businesses and institutions that trust AB MASS to deliver results that move them forward.
+          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl">
+            Welcome to AB MASS Company - a trusted partner in fostering economic growth and strengthening business ties between businesses and organizations.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
-              Explore Our Services
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-              Contact Us
+          <div className="flex justify-start">
+            <Button variant="professional" size="lg">
+              Become a partner
             </Button>
           </div>
         </div>
